@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.photo{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+#basket{
+    bottom: 0;
+
+}
+#proken{
+    height: 180px;
+    bottom: 0;
+}
+.hidden{
+    display: none;
+}
