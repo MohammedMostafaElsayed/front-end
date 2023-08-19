@@ -1,0 +1,176 @@
+/*------------------all----------------*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+body{
+    font-family: system-ui;
+    background-color: #1e1c2a;
+}
+/*-----------------header-----------------*/
+.header{
+    z-index: 9;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e1c2a;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.header-text{
+    color: chocolate;
+    font-size: 30px;
+    font-weight: bold;
+}
+.header-list .header-list-item{
+    display: flex;
+    align-items: center;
+}
+.header-list-item li{
+    margin-right: 60px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.header-list-item a{
+    color: aliceblue;
+}
+.header-list-item a:hover{
+    color: chocolate;
+}
+/*------------------------home--------------*/
+.section {
+    padding: 50px 10%;
+}
+.home{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+.home-text{
+    line-height: 1.5;
+}
+.home-text h2{
+    color: chocolate;
+    font-size: 60px;
+
+
+}
+.home-text p{
+    color:aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.home-text a{
+    background-color: chocolate;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.home-img{
+    margin: 70px;
+}
+.home-img img{
+    width: 500px;
+}
+/*--------------------------about--------------------*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-img img{
+    width: 500px;
+}
+.about-text h2{
+    color: chocolate;
+    font-size: 20px;
+}
+.about-text h1{
+    color: aliceblue;
+    font-size: 50px;
+}
+.about-text p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: aliceblue;
+    line-height: 1.7;
+}
+.about-text a{
+    color: aliceblue;
+    background-color: chocolate;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+/*----------------menu---------------*/
+.menu{
+
+}
+.menu-head{
+    text-align: center;
+    font-size: 15px;
+    color: chocolate;
+}
+.menu-title{
+    text-align: center;
+    color:aliceblue;
+
+}
+.menu-item{
+    display: flex;
+    justify-content: center;
+}
+.item1{
+    position: relative;
+    background-color: antiquewhite;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: calc(100% / 4);
+    height: 420px;
+}
+.item1 h5{
+    color: chocolate;
+    margin-bottom: 20px;
+}
+.item1 img{
+    padding-top: 30px;
+}
+.item1 .bx{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 10px 0 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #ff7020;
+}
+/*-----------------------footer--------------------------*/
+.foot{
+    display: flex;
+    justify-content: center;
+}
+.foot1{
+    margin: 20px;
+}
+.foot1 h1{
+    font-size: 20px;
+    color: aliceblue
+}
+.foot1 h3{
+    color: aliceblue;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.foot1 .bx{
+    color: aliceblue;
+    font-size: 20px;
+
+}
