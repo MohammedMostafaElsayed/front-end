@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mydiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    width: 90px;
+    height: 260px;
+}
+#mydiv div:nth-child(1){
+    background-color: green;
+}
+#mydiv div:nth-child(2){
+    background-color: yellow;
+}
+#mydiv div:nth-child(3){
+    background-color: red;
+}
+#secdiv{
+    background-color: black;
+    width: 10px;
+    height: 200px;
+}
+.sty{
+    
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+}
+#mydiv div:nth-child(1):hover{
+    transition: 1s;
+    box-shadow: 0 0 10px 10px green;
+
+}
+#mydiv div:nth-child(2):hover{
+    transition: 1s;
+    box-shadow: 0 0 10px 10px yellow;
+}
+#mydiv div:nth-child(3):hover{
+    transition: 1s;
+    box-shadow: 0 0 10px 10px red;
+}
+
+

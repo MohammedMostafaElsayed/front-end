@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <img id="img" width="100" height="100">
+        <button id="play">play</button>
+        <button id="puse">pause</button>
+        <button id="stop">stop</button><br>
+        time<input type="range" id="time" value="0" min="0"><br>
+        vol<input type="range" id="vol" step=".01" min="0" max="1" >
+    </header>
+    <main class="main">
+        <audio></audio>
+        <table id="tb">
+            <tr><th colspan="2">Songs</th></tr>
+            <tr><td>song1</td><td><button class="x">play</button></td></tr>
+            <tr><td>song2</td><td><button class="x">play</button></td></tr>
+            <tr><td>song3</td><td><button class="x">play</button></td></tr>
+            <tr><td>song4</td><td><button class="x">play</button></td></tr>
+        </table>
+    </main>
+    <script src="./java_script.js"></script>
+    
+</body>
+</html> 

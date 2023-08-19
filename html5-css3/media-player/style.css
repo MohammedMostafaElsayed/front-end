@@ -1,0 +1,12 @@
+table, th, td{
+    border:1px solid black;
+}
+.header{
+    border:1px solid black;
+    background-color: rgb(233, 169, 193);
+    margin: 50px;
+
+}
+.main{
+    margin: 50px;
+}
