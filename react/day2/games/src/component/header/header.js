@@ -1,6 +1,8 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function Header(){
+  const counter = useSelector(state => state.counter.initial); 
     return(
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
@@ -17,7 +19,7 @@ function Header(){
           <Link className="nav-link" to="/about">About us</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/contact-us">contact us</Link>
+          <Link className="nav-link" to="/contact-us">contact us {counter}</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/blog">Blog</Link>
