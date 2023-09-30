@@ -1,0 +1,35 @@
+.container_all{
+    width: 100%;
+    margin-top: 50px;
+    color: aliceblue;
+    
+    background-color: black;
+    padding-bottom: 20px;
+}
+.container {
+    width: 100%;
+    
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.skill_text{
+    text-align: center;
+}
+.range_container{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.skill_range{
+    width: 60%;
+}
+.html {width: 90%; }
+.css {width: 60%; background-color:darkgray;}
+.java {width: 50%; background-color:darkgray;}
+.python {width: 100%; background-color:darkgray;}
+.django {width: 40%; background-color:darkgray;}

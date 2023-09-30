@@ -1,0 +1,10 @@
+.container_bio{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+.about{
+    margin-right: 300px;
+    padding-left: 50px;
+    width: 100%;
+}

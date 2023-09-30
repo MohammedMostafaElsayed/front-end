@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 300px;
+    background-size: 100% 100%;
+    background-image: url('/home/mohammed/ITI/front-end/react/day1/project/src/helper/header-backend-tools.png');
+}
+.text_head{
+    color: aliceblue;
+    padding-top: 60px;
+    padding-left: 60px;
+}
+.btn{
+    width: 110px;
+    height: 40px;
+    margin-top: 20px;
+    background: transparent;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid;
+}
