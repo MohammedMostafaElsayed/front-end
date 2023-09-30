@@ -1,7 +1,7 @@
-import CardList from "../component/cards/cards";
+import ProductList from "../component/product/productList";
 
 export default function Product(){
     return(
-        <CardList/>
+        <ProductList/>
     );
 }

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
     return (
@@ -8,22 +8,68 @@ export default function Header() {
                 <div className="collapse navbar-collapse position-absolute top-0 end-0" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">home</Link>
+                            <NavLink
+                                to="/"
+                                className="nav-link"
+                                style={({ isActive }) => {
+                                    return {
+                                        fontWeight: isActive ? "bold" : "",
+                                        color: isActive ? "orange" : "black",
+                                    };
+                                }}
+                            >
+                                home
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/product">product</Link>
+                            <NavLink
+                                to="/login"
+                                className="nav-link"
+                                style={({ isActive, isPending }) => {
+                                    return {
+                                        fontWeight: isActive ? "bold" : "",
+                                        color: isActive ? "orange" : "black",
+                                    };
+                                }}
+                            >
+                                login
+                            </NavLink>
+
+
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/">Register</Link>
+                            <NavLink
+                                to="/regester"
+                                className="nav-link"
+                                style={({ isActive, isPending }) => {
+                                    return {
+                                        fontWeight: isActive ? "bold" : "",
+                                        color: isActive ? "orange" : "black",
+                                    };
+                                }}
+                            >
+                                Register
+                            </NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Login</Link>
+                            <NavLink
+                                to="/messages"
+                                className="nav-link"
+                                style={({ isActive, isPending }) => {
+                                    return {
+                                        fontWeight: isActive ? "bold" : "",
+                                        color: isActive ? "orange" : "black",
+                                    };
+                                }}
+                            >
+                                cart
+                            </NavLink>
                         </li>
 
                     </ul>
 
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 }
