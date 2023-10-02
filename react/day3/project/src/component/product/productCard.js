@@ -1,6 +1,13 @@
+import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
+import { addItem, increaseCounter, sumPrice } from "../../store/slice/counter";
 
 export default function ProductCard({item}) {
+    const counter = useSelector(state=>state.counter.initial);
+    const add = useSelector(state => state.counter.items)
+    const totalPrice = useSelector(state => state.counter.totalPrice)
+
+    const dispatch = useDispatch();
     return (
         
         <div className="col p-5 w-25"  key={item.id}>
@@ -19,9 +26,9 @@ export default function ProductCard({item}) {
                         <h6 className="card-title fw-bold">{item.title}</h6>
                         <h6 className="fw-bold">{item.price}$</h6>
                     </div>
-                    <p className="card-text" style={{height: '90px'}}>{item.description}</p>
-                    <h6>rate: {item.rating}</h6>
-                    <button type="button" className="btn btn-outline-secondary rounded-pill">add to cart</button>
+                    <p className="card-text mb-5" style={{height: '90px'}}>{item.description}</p>
+                    <h6 className="pt-3">rate: {item.rating}</h6>
+                    <button type="button" className="btn btn-outline-secondary rounded-pill" onClick={()=>{dispatch(increaseCounter()); dispatch(addItem(item)); dispatch(sumPrice(item))}}>add to cart</button>
                 </div>
 
             </div>

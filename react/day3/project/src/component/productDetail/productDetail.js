@@ -1,4 +1,9 @@
+import {  useDispatch, useSelector } from "react-redux";
+import { increaseCounter } from "../../store/slice/counter";
+
 export default function CardD({item}){
+    const counter = useSelector(state => state.counter.initial);
+    const dispatch = useDispatch();    
     return(
         <div className="d-flex m-5 p-5 justify-content-center w-100">
             <div className="w-50">
@@ -23,7 +28,7 @@ export default function CardD({item}){
                 }
                 <div className="d-flex">
                     <button type="button" className="btn btn-outline-secondary rounded-pill m-2">buy now</button>
-                    <button type="button" className="btn btn-outline-secondary rounded-pill m-2">add to cart</button>
+                    <button type="button" className="btn btn-outline-secondary rounded-pill m-2" onClick={()=>{dispatch(increaseCounter())}}>add to cart</button>
                 </div>
             </div>
         </div>

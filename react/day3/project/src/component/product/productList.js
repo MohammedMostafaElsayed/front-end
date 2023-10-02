@@ -11,14 +11,13 @@ export default function ProductList() {
             .get('https://dummyjson.com/products')
             .then((res) => {
                 setproduct(res.data.products)
-                //console.log(res)
-
+                console.log(res)
              })
             .catch((err) => { console.log(err) })
     }, []);
     return (
-        <>
-        <h4 className="fw-bold p-2">Welcome to our website ...</h4>
+        <div className="p-5 m-5">
+        <h4 className="fw-bold p-">Welcome to our website ...</h4>
             <hr/>
        
         <div className="row row-cols-1 row-cols-md-3 g-4">
@@ -32,7 +31,7 @@ export default function ProductList() {
             }
             
         </div>
-        </>
+        </div>
 
     );
 }

@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 function LoginForm() {
   return (
-    <Form className='m-4 w-50'>
+    <Form className='m-4 w-50 p-5'>
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
         <Form.Label column sm="2">
           Email
