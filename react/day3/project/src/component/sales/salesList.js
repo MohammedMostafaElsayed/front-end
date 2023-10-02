@@ -6,8 +6,6 @@ export default function SalesList(){
     const items = useSelector(state => state.counter.items);
     const totalPrice = useSelector(state => state.counter.totalPrice)
     
-
-    
     return(
         
         <div className="m-5 p-5">
@@ -20,7 +18,7 @@ export default function SalesList(){
                     );
                 })
             }
-            <h1>total price: {totalPrice}$</h1> </> : <h1>Empty Cart</h1>}
+            <h1>total price: {totalPrice}$</h1> </> : <h1 className="m-5 p-5">Empty Cart</h1>}
             
         </div>
         
